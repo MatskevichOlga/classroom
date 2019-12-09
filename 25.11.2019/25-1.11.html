@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+body, ul { margin: 0 }
+body>* {
+    min-width: 200px;
+}
+ul {
+    list-style-type: none;
+}
+.header { 
+    background-color: red;
+     }
+
+.header+div {
+    background-color: orange;
+    float: left;
+    width: calc(100% / 3);
+}
+.header+div+div {
+    background-color: blue;
+    float: left;
+    width: calc(100% / 3);
+    min-height: 100px;
+}
+.header+div+div+div {
+    background-color: green;
+    float: left;
+    width: calc(100% / 3);
+    min-height: 100px;
+}
+.footer {
+    background-color: pink;
+    clear: both;
+    min-height: 100px;
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="header">Шапка сайта
+<ul>
+<li>Пункт 1</li>
+<li>Пункт 2</li>
+<li>Пункт 3</li>
+<li>Пункт 4</li>
+<li>Пункт 5</li>
+</ul>
+</div>
+<div>Боковое меню
+<ul>
+<li>Пункт 1</li>
+<li>Пункт 2</li>
+<li>Пункт 3</li>
+<li>Пункт 4</li>
+<li>Пункт 5</li>
+<li>Пункт 6</li>
+<li>Пункт 7</li>
+</ul>
+</div>
+<div>Контент</div>
+<div>Колонка с каким-то контентом</div>
+<div class="footer">Футер</div>
+
+</body>
+</html>
